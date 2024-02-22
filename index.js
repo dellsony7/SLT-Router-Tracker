@@ -2,13 +2,14 @@ import express, { response } from "express"
 import mongoose from "mongoose"
 import itemsRoute from "./routes/itemsRoute.js"
 import cors from "cors"
-import dotenv from 'dotenv';
+import dotenv from "dotenv"
 
 //
-dotenv.config();
+dotenv.config()
 const app = express()
-const PORT = process.env.PORT
-const mongoDBURL = process.env.mongoDBURL
+const PORT = 3002
+const mongoDBURL =
+  "mongodb+srv://delsanidissanayaka7:90ZrrCKMrGG7J2bY@cluster0.jaiczjb.mongodb.net/?retryWrites=true&w=majority"
 
 // Middleware for parsing request body
 app.use(express.json())
